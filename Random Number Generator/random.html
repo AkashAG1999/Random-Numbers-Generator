@@ -1,0 +1,31 @@
+<html>
+<body>
+<p id="number"> </p>
+<button id="b" onclick="random();"> Generate Lucky draw </button>
+</body>
+<script>
+function random(){	
+document.getElementById("number").innerHTML = Math.floor(Math.random() * 20);
+}
+</script>
+<style>
+
+#number{
+	font-size:100px;
+}
+#b{
+	background-color: #4CAF50 ;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	margin: 0;
+	border-radius: 8px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+	position: absolute;
+	top: 50%;
+	font-family: verdana;
+	display: inline-block;
+	font-size: 16px;
+}
+</style>
